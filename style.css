@@ -1,6 +1,5 @@
-html {
+body {
   background-color: navy;
-  color: aqua;
 }
 
 .navbar-brand {
@@ -9,5 +8,98 @@ html {
 
 .nav-link {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#navSearch {
+  background-color: black;
+  border-color: silver;
+  color: silver;
+}
+
+#navSearch:hover {
+  background-color: dimgrey;
+  color: black;
+  font-weight: bold;
+}
+
+main {
+  margin-top: 40px;
+}
+
+main div {
+  margin: auto;
+}
+
+main div h1 {
+  font-size: 4.5em;
+  color: aqua;
+  font-family: 'Potta One', cursive;
+  text-align: center;
+  padding-bottom: 1.2em;
+}
+
+main div #searchButton {
+  background-color: dodgerblue;
+  color: #fff;
+}
+
+main div #searchButton:hover {
+  background-color: lightskyblue;
+  color: #fff;
+}
+
+main div #thumbs {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main div .img-wrapper {
+  display: table;
+  height: 140px;
+  width: 200px;
+  table-layout: fixed;
+  float: left;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-bottom: 12px;
+}
+
+main div .outer {
+  height: 100%;
+}
+
+main div .inner {
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #e6e6e6;
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+}
+
+main div .inner img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 128px;
+}
+
+main div .loader-wrapper {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 20000;
+  background: white;
+}
+
+main div .loader-wrapper.shown {
+  display: block;
+}
+
+footer .nav-link {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */
