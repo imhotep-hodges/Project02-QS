@@ -6,6 +6,8 @@ Description:
 IMGWarehouse is a mock website. It's based on Stock photo or GIF collection websites. 
 Users can use the search bar to find specific GIF images. 
 
+GIPHY Search for this project only works in an IDE or Visual Studio Code test environment. 
+
 This is my second project for the Quickstart Fullstack Developer Bootcamp
 
 Technologies used: HTML, SCSS, CSS, JS, JQuery
