@@ -2,26 +2,79 @@ body {
   background-color: navy;
 }
 
-.navbar-brand {
+/* Nav Bar */
+.topnav {
+  background-color: #fdf3f3;
+  overflow: hidden;
+}
+
+.topnav .navBrand {
   font-family: 'Russo One', sans-serif;
-}
-
-.nav-link {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-#navSearch {
+  font-size: 20px;
+  color: white;
   background-color: black;
-  border-color: silver;
-  color: silver;
 }
 
-#navSearch:hover {
-  background-color: dimgrey;
+.topnav .navLinks {
+  font-family: 'Potta One', cursive;
+}
+
+.topnav .navLinks a:hover {
+  font-size: 19px;
   color: black;
-  font-weight: bold;
 }
 
+.topnav a {
+  float: left;
+  display: block;
+  color: #161515;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.active {
+  text-decoration: underline;
+  color: black;
+  font-size: 19px;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .topnav a:not(.navBrand) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .navLinks {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Begin GIPHY Search Engine Section */
 main {
   margin-top: 40px;
 }
@@ -99,6 +152,7 @@ main div .loader-wrapper.shown {
   display: block;
 }
 
+/* footer */
 footer .nav-link {
   text-decoration: underline;
 }
