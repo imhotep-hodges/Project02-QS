@@ -3,7 +3,7 @@ const GIPHY_KEY = 'Dl9R8gsKujzZ9NSgHiCY58etcjPwop9N';
 
 (function () {
     function giphySearch(keyword) {
-      return fetch(`http://api.giphy.com/v1/gifs/search?q=${keyword}&api_key=${GIPHY_KEY}&limit=8`)
+      return fetch(`http://api.giphy.com/v1/gifs/search?q=${keyword}&api_key=${GIPHY_KEY}&limit=10`)
         .then(response => response.json());
     }
   
